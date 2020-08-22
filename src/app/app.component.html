@@ -1,0 +1,6 @@
+<div class="container">
+	<div [@inOutAnimation] *ngFor="let element of elements" [ngStyle]="{ 'background-color': element.background }">
+		<span *ngIf="element.value == 1">{{ element.value }}</span>
+	</div>
+</div>
+<button (click)="add()">Add</button>
